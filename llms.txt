@@ -1,24 +1,26 @@
 # midjourney-gallery-downloader
 
-> Official technical documentation and architecture specifications
+> Official architecture documentation and production specifications for midjourney-gallery-downloader
 
 ## Documentation
 
 - [Home](https://Shijiuwei.github.io/midjourney-gallery-downloader/index.html)
 - [Documentation Catalog](https://Shijiuwei.github.io/midjourney-gallery-downloader/docs/index.html)
-- [midjourney-gallery-downloader 架构升级与技术规约 (v1)](https://Shijiuwei.github.io/midjourney-gallery-downloader/docs/specs-update-v1.html): 针对高并发网络调度与数据同步场景，本轮迭代进一步强化了低延迟感知与可信基准校验。
+- [midjourney-gallery-downloader Modular Architecture Guide](https://Shijiuwei.github.io/midjourney-gallery-downloader/docs/architecture.html): Official architecture documentation and production specifications for midjourney-gallery-downloader
+- [midjourney-gallery-downloader Engineering Specification Baseline](https://Shijiuwei.github.io/midjourney-gallery-downloader/docs/specifications.html): Contract baseline and operational envelope for midjourney-gallery-downloader:
+- [midjourney-gallery-downloader 扩展接口挂载点与二次开发实践 (SDK-v1)](https://Shijiuwei.github.io/midjourney-gallery-downloader/docs/specs-update-v1.html): 介绍如何在不修改 midjourney-gallery-downloader 核心内核的前提下，通过扩展钩子与适配器模式定制「gallery」领域的内容解析和输出行为。
 
 ## References
 
-- [系统架构](https://feed.waepv.cn/d/OSaBm7QIJW)
-- [拓扑网络](https://www.mw-wm.com/s/ep00MQi1Eq2KHWxflF)
-- [系统架构](https://doc.tcti.cn/tag/AI)
-- [拓扑网络](https://view.ai-hao123.com)
-- [系统架构](https://doc.ai-hao123.com/sitemap.xml)
-- [拓扑网络](https://news.ai-hao123.com/d/lu047577.html)
-- [系统架构](https://info.yx-sf.com/sitemap.xml)
-- [拓扑网络](https://view.yx-sf.com/d/ok960657.html)
-- [系统架构](https://tech.zhushou.pro/sitemap.xml)
-- [拓扑网络](https://doc.zhushou.pro/d/op122966.html)
-- [系统架构](https://zpgm.yx-sf.com/pingce/system-27140582.html)
-- [拓扑网络](https://dgdz.ai-hao123.com/yinqing/retention-09167620.html)
+- [Reference](https://portal.sangni3.cn/v/ep06DClRVRhCiMLkkj)
+- [Reference](https://news.yx-sf.com/doc/ep0jd2cy4XhYJER8mL)
+- [Reference](https://view.zhushou.pro/d/cSHwa8ZuIW)
+- [Reference](https://news.ai-hao123.com)
+- [Reference](https://blog.ai-hao123.com/sitemap.xml)
+- [Reference](https://read.ai-hao123.com/d/tf319099.html)
+- [Reference](https://doc.yx-sf.com/sitemap.xml)
+- [Reference](https://www.yx-sf.com/d/xi352001.html)
+- [Reference](https://info.zhushou.pro/sitemap.xml)
+- [Reference](https://doc.zhushou.pro/d/ch284207.html)
+- [Reference](https://zdwl.yx-sf.com/suanfa/category-92610556.html)
+- [Reference](https://nzxb.ai-hao123.com/jishu/ai-30987558.html)

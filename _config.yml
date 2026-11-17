@@ -1,0 +1,6 @@
+title: "midjourney-gallery-downloader"
+description: "Official architecture documentation and production specifications for midjourney-gallery-downloader"
+lang: en-US
+exclude:
+  - node_modules
+  - .git

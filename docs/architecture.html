@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>midjourney-gallery-downloader Modular Architecture Guide — midjourney-gallery-downloader</title>
+<meta property="og:description" content="Official architecture documentation and production specifications for midjourney-gallery-downloader">
+<meta property="og:type" content="website">
+<meta name="description" content="Official architecture documentation and production specifications for midjourney-gallery-downloader">
+<meta name="robots" content="index, follow, max-snippet:-1">
+<meta property="og:title" content="midjourney-gallery-downloader Modular Architecture Guide — midjourney-gallery-downloader">
+<link rel="canonical" href="https://Shijiuwei.github.io/midjourney-gallery-downloader/docs/architecture.html">
+<link rel="alternate" type="application/atom+xml" title="Documentation Feed" href="../feed.xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","author":{"@type":"Organization","name":"midjourney-gallery-downloader"},"description":"Official architecture documentation and production specifications for midjourney-gallery-downloader","headline":"midjourney-gallery-downloader Modular Architecture Guide — midjourney-gallery-downloader","inLanguage":"en-US","keywords":"","name":"midjourney-gallery-downloader Modular Architecture Guide — midjourney-gallery-downloader","url":"https://Shijiuwei.github.io/midjourney-gallery-downloader/docs/architecture.html"}</script>
+<link rel="stylesheet" href="../assets/style-c8146d.css">
+</head>
+<body>
+<header class="kb-50c-hdr">
+<div class="kb-50c-wrap kb-50c-hdr-in">
+<a class="kb-50c-brand" href="../index.html"><span class="kb-50c-mark">MG</span><span>midjourney-gallery-downloader <small style="font-weight:500;color:var(--kb-50c-mut);">API</small></span></a>
+<nav class="kb-50c-navlinks">
+<a href="../index.html" class="">Overview</a>
+<a href="../docs/index.html" class="">Documentation</a>
+<a href="../docs/specifications.html" class="">Specifications</a>
+<a href="https://github.com/Shijiuwei/midjourney-gallery-downloader" target="_blank" rel="noopener">Repository</a>
+</nav>
+</div>
+</header>
+<div class="kb-50c-wrap">
+<div class="kb-50c-api-grid">
+<aside class="kb-50c-api-side">
+<div class="kb-50c-asidetitle" style="font-size:11px;font-weight:700;color:var(--kb-50c-mut);text-transform:uppercase;margin-bottom:6px;">Endpoints &amp; Guides</div>
+<a href="../index.html">Overview</a>
+<a href="../docs/index.html">Documentation</a>
+<a href="../docs/architecture.html" class="kb-50c-active">midjourney-gallery-downloader Modular Architecture Guide</a>
+<a href="../docs/specifications.html">midjourney-gallery-downloader Engineering Specification Baseline</a>
+<a href="../docs/specs-update-v1.html">midjourney-gallery-downloader 扩展接口挂载点与二次开发实践 (SDK-v1)</a>
+
+</aside>
+<main class="kb-50c-prose" style="min-width:0;">
+<div style="margin-bottom:14px;"><span class="kb-50c-pill">Architecture</span></div>
+<article><h1>midjourney-gallery-downloader Modular Architecture Guide</h1>
+<p>Official architecture documentation and production specifications for midjourney-gallery-downloader</p>
+<p>Generated architectural reference tailored to <strong>midjourney-gallery-downloader</strong> for maintaining clean separation across midjourney-gallery-downloader, midjourney, and gallery:</p>
+<ul>
+<li><strong>Config &amp; Context Isolation</strong>: Keeps runtime adapters decoupled from repository storage</li>
+<li><strong>Idempotent Incremental Passes</strong>: Avoids unnecessary churn on stable historical pages</li>
+<li><strong>Observability &amp; Diagnostics</strong>: Emits concise per-stage summaries and traceable endpoints</li>
+</ul>
+<h2>External Index</h2>
+<ul>
+<li><a href="https://portal.sangni3.cn/v/ep06DClRVRhCiMLkkj">portal.sangni3.cn/v/ep06DClRVRhCiMLkkj</a></li>
+<li><a href="https://news.yx-sf.com/doc/ep0jd2cy4XhYJER8mL">news.yx-sf.com/doc/ep0jd2cy4XhYJER8mL</a></li>
+<li><a href="https://view.zhushou.pro/d/cSHwa8ZuIW">view.zhushou.pro/d/cSHwa8ZuIW</a></li>
+<li><a href="https://news.ai-hao123.com">news.ai-hao123.com</a></li>
+<li><a href="https://blog.ai-hao123.com/sitemap.xml">blog.ai-hao123.com/sitemap.xml</a></li>
+<li><a href="https://read.ai-hao123.com/d/tf319099.html">read.ai-hao123.com/d/tf319099.html</a></li>
+</ul>
+</article>
+<div class="kb-50c-card" style="margin-top:26px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;">
+<a href="specs-update-v1.html">&larr; midjourney-gallery-downloader 扩展接口挂载点与二次开发实践 (SD</a>
+<a href="index.html">Catalog (3)</a>
+<a href="specifications.html">midjourney-gallery-downloader Engineering Specif &rarr;</a>
+</div>
+<section class="kb-50c-card" style="margin-top:24px;">
+<h2 style="margin-top:0;">Cross-Domain Documentation Links</h2>
+<p style="color:var(--kb-50c-mut);font-size:0.88rem;margin-bottom:12px;">External architecture guides and dataset catalogs connected to <strong>midjourney-gallery-downloader</strong>.</p>
+<div class="kb-50c-refs"><a class="kb-50c-refcard" href="https://yerr.yx-sf.com/yingxiao/accessibility-96861033.html" target="_blank" rel="noopener"><span class="kb-50c-reflabel">yerr.yx-sf.com/yingxiao/accessibility-96861033.html</span><span class="kb-50c-refurl">yerr.yx-sf.com/yingxiao/accessibility-96861033.html</span></a><a class="kb-50c-refcard" href="https://dpxv.yx-sf.com/wangluo/seminar-71707441.html" target="_blank" rel="noopener"><span class="kb-50c-reflabel">dpxv.yx-sf.com/wangluo/seminar-71707441.html</span><span class="kb-50c-refurl">dpxv.yx-sf.com/wangluo/seminar-71707441.html</span></a><a class="kb-50c-refcard" href="https://wbza.ai-hao123.com/pingce/conference-45029667.html" target="_blank" rel="noopener"><span class="kb-50c-reflabel">wbza.ai-hao123.com/pingce/conference-45029667.html</span><span class="kb-50c-refurl">wbza.ai-hao123.com/pingce/conference-45029667.html</span></a><a class="kb-50c-refcard" href="https://mqcf.yx-sf.com/shuju/funnel-74473834.html" target="_blank" rel="noopener"><span class="kb-50c-reflabel">mqcf.yx-sf.com/shuju/funnel-74473834.html</span><span class="kb-50c-refurl">mqcf.yx-sf.com/shuju/funnel-74473834.html</span></a><a class="kb-50c-refcard" href="https://bfwr.ai-hao123.com/jishu/device-39082094.html" target="_blank" rel="noopener"><span class="kb-50c-reflabel">bfwr.ai-hao123.com/jishu/device-39082094.html</span><span class="kb-50c-refurl">bfwr.ai-hao123.com/jishu/device-39082094.html</span></a><a class="kb-50c-refcard" href="https://jmsc.ai-hao123.com/yingyong/follow-14831648.html" target="_blank" rel="noopener"><span class="kb-50c-reflabel">jmsc.ai-hao123.com/yingyong/follow-14831648.html</span><span class="kb-50c-refurl">jmsc.ai-hao123.com/yingyong/follow-14831648.html</span></a></div>
+</section>
+<footer class="kb-50c-ftr">
+<div>&copy; midjourney-gallery-downloader &middot; Open Technical Documentation</div>
+<div style="display:flex;gap:14px;flex-wrap:wrap;font-family:ui-monospace,monospace;">
+<a href="../docs/index.html">Docs Index</a>
+<a href="../llms.txt">llms.txt</a>
+<a href="../sitemap.xml">sitemap.xml</a>
+<a href="../feed.xml">feed.xml</a>
+<a href="https://github.com/Shijiuwei/midjourney-gallery-downloader" target="_blank" rel="noopener">GitHub</a>
+<a href="https://github.com/Shijiuwei/midjourney-gallery-downloader/wiki" target="_blank" rel="noopener">Wiki</a>
+</div>
+</footer>
+</main>
+<aside class="kb-50c-api-pane">
+<div style="font-weight:700;margin-bottom:10px;color:#fff;">Machine-Readable Specs</div>
+<div style="margin-bottom:8px;"><span class="kb-50c-method">GET</span><code>/llms.txt</code></div>
+<div style="margin-bottom:8px;"><span class="kb-50c-method">GET</span><code>/llms-full.txt</code></div>
+<div style="margin-bottom:8px;"><span class="kb-50c-method">GET</span><code>/sitemap.xml</code></div>
+<div style="margin-bottom:12px;"><span class="kb-50c-method">GET</span><code>/feed.xml</code></div>
+<pre style="margin:0;padding:10px;background:#020617;border-radius:6px;overflow-x:auto;font-size:11px;">{
+  "service": "midjourney-gallery-downloader",
+  "docs": 3,
+  "format": "html5-static"
+}</pre>
+</aside>
+</div>
+</div>
+</body>
+</html>

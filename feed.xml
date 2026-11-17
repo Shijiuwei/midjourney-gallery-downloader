@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>midjourney-gallery-downloader</title>
+  <subtitle>Official architecture documentation and production specifications for midjourney-gallery-downloader</subtitle>
+  <link href="https://Shijiuwei.github.io/midjourney-gallery-downloader/feed.xml" rel="self"/>
+  <id>https://Shijiuwei.github.io/midjourney-gallery-downloader/</id>
+  <updated>2026-11-17T18:18:58.357256+00:00</updated>
+  <entry>
+    <title>midjourney-gallery-downloader 扩展接口挂载点与二次开发实践 (SDK-v1)</title>
+    <link href="https://Shijiuwei.github.io/midjourney-gallery-downloader/docs/specs-update-v1.html"/>
+    <id>https://Shijiuwei.github.io/midjourney-gallery-downloader/docs/specs-update-v1.html</id>
+    <updated>2026-11-17T18:18:58.357256+00:00</updated>
+    <summary>介绍如何在不修改 midjourney-gallery-downloader 核心内核的前提下，通过扩展钩子与适配器模式定制「gallery」领域的内容解析和输出行为。</summary>
+  </entry>
+  <entry>
+    <title>midjourney-gallery-downloader Modular Architecture Guide</title>
+    <link href="https://Shijiuwei.github.io/midjourney-gallery-downloader/docs/architecture.html"/>
+    <id>https://Shijiuwei.github.io/midjourney-gallery-downloader/docs/architecture.html</id>
+    <updated>2026-11-17T18:18:58.357256+00:00</updated>
+    <summary>Official architecture documentation and production specifications for midjourney-gallery-downloader</summary>
+  </entry>
+  <entry>
+    <title>midjourney-gallery-downloader Engineering Specification Baseline</title>
+    <link href="https://Shijiuwei.github.io/midjourney-gallery-downloader/docs/specifications.html"/>
+    <id>https://Shijiuwei.github.io/midjourney-gallery-downloader/docs/specifications.html</id>
+    <updated>2026-11-17T18:18:58.357256+00:00</updated>
+    <summary>Contract baseline and operational envelope for midjourney-gallery-downloader:</summary>
+  </entry>
+</feed>
